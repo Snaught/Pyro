@@ -1,0 +1,109 @@
+body {
+    background: url('images/OAK.png');
+    background-size: cover;
+}
+
+button#toggleButton {
+    background-color: #9b0c0c;
+    border: 2px solid black;
+    border-radius: 8px;
+    left: 5%;
+    position: fixed;
+    top: 5%;
+}
+
+div#pic-grid {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(3,1fr);
+}
+
+div#featured {
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: repeat(2,1fr);
+}
+
+div#pic-grid img {
+    border-radius: 5px;
+    border-width: min(.4vw, 4px);
+    height: auto;
+    max-height: 33vh;
+    width: 100%;
+}
+
+div#featured img {
+    border-radius: 5px;
+    border-width: min(.4vw, 4px);
+    height: auto;
+    max-height: 50vh;
+    width: 100%;
+}
+
+header {
+    background: url('images/header.jpg');
+    background-size: cover;
+    text-align: center;
+}
+
+html{
+        font-family: cursive;
+}
+
+h3 {
+    font-size: xxx-large;
+    margin: 0;
+    padding: 10px;
+}
+
+h3:hover {
+    color: red;
+}
+
+img.spinlogo {
+    animation: spin 3s linear infinite;
+    left: 3%;
+    max-width: 14%;
+    position: absolute;
+    top: 5%;
+}
+
+nav li {
+    display: inline-block;
+    margin: 10px;
+}
+
+.magnifier {
+    border: 1px solid #000;
+    pointer-events: none;
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.85), 0 0 7px 7px rgba(0, 0, 0, 0.25), inset 0 0 40px 2px rgba(0, 0, 0, 0.25);
+    background: #fff url(images/glass.png) no-repeat center center;
+    display: none;
+}
+
+.mmenu {
+    background: transparent;
+    border: none;
+    font-family: cursive;
+    font-size:2vw;
+}
+
+.mmenu:hover {
+    color: #790808;
+}
+
+#detail img {
+    height: auto;
+    max-height: 100%;
+    max-width: 100%;
+    width: auto;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg);}
+}
